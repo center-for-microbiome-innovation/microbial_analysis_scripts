@@ -1,0 +1,13 @@
+atropos trim \
+    --threads 14 \
+    -a GATCGGAAGAGCACACGTCTGAACTCCAGTCAC \
+    -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
+    --nextseq-trim 30 \
+    -q 15 \
+    --minimum-length 100 \
+    --pair-filter any \
+    --report-formats txt \
+    -o $f_file_out_name \
+    -p $r_file_out_name \
+    -pe1 $f_file_in \
+    -pe2 $r_file_in
